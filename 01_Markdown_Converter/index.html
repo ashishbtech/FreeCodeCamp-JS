@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>MD Converter</h1>
+        <p>Real-time Markdown Parsing Engine</p>
+    </header>
+
+    <main class="container">
+        <section class="editor-pane">
+            <div class="pane-header">
+                <span>Markdown Input</span>
+            </div>
+            <textarea id="markdown-input" spellcheck="false">
+# Welcome to the Markdown Converter
+## Subheading Level 2
+### Subheading Level 3
+
+This is a real-time parser showcasing **Regex logic** and DOM manipulation. 
+
+You can easily write *italicized text* or insert inline `code snippets`.
+
+Here is a [link to freeCodeCamp](https://www.freecodecamp.org).
+            </textarea>
+        </section>
+
+        <section class="preview-pane">
+            <div class="pane-header">
+                <span>Live Preview</span>
+            </div>
+            <div id="preview-output" class="output-content"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
