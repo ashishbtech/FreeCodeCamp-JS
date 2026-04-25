@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+body.antique {
+  background-color: antiquewhite;
+  color: #333;
+}
+
+#theme-toggle {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark #theme-toggle {
+  background-color: #fff;
+  color: #222;
+}
+
+body.antique #theme-toggle {
+  background-color: #333;
+  color: antiquewhite;
+}
+
+#drum-machine {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid currentColor;
+}
+
+#display {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #555;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.1s, box-shadow 0.1s, background-color 0.1s;
+}
+
+body.antique .drum-pad {
+  background-color: #d4b595;
+  color: #222;
+}
+
+.drum-pad:active, .drum-pad.active {
+  transform: scale(0.95);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  background-color: #ff9800;
+  color: #fff;
+}
