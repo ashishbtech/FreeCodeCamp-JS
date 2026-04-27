@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Voting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Voting Dashboard</h1>
+        <p>Live Polling State Management</p>
+    </header>
+
+    <main class="container">
+        <section class="control-pane">
+            <div class="card">
+                <div class="card-header">Add New Option</div>
+                <div class="input-group">
+                    <input type="text" id="option-input" placeholder="e.g., Japan" autocomplete="off">
+                    <button id="add-option-btn">Add</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Cast Your Vote</div>
+                <div class="input-group">
+                    <input type="text" id="vote-option-input" placeholder="Option Name" autocomplete="off">
+                    <input type="text" id="voter-id-input" placeholder="Voter ID (e.g., traveler4)" autocomplete="off">
+                    <button id="vote-btn">Vote</button>
+                </div>
+            </div>
+
+            <div id="message-log" class="message-log"></div>
+        </section>
+
+        <section class="results-pane">
+            <div class="card-header">Live Results</div>
+            <div id="results-container" class="results-container"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
