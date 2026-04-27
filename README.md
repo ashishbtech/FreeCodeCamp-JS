@@ -7,6 +7,6 @@ This repository bypasses introductory syntax and isolated algorithms to focus ex
 ### The Projects
 - [x] **Markdown to HTML Converter:** (Regex & String Parsing)
 - [x] **Drum Machine:** (Audio API & Interactive Event Listeners)
-- [ ] **Voting System:** (Maps, Sets & State Management)
+- [x] **Voting System:** (Maps, Sets & State Management)
 - [ ] **Bank Account Manager:** (Classes & Object-Oriented Logic)
 - [ ] **Weather App:** (Asynchronous JS & API Integration)
