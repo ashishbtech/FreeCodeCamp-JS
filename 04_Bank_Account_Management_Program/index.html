@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Nexus Banking</h1>
+        <p>Object-Oriented Account Management</p>
+    </header>
+
+    <main class="container">
+        <section class="control-panel">
+            <div class="card" id="create-account-card">
+                <div class="card-header">Open New Account</div>
+                <div class="input-group">
+                    <input type="text" id="account-name" placeholder="Account Holder Name" autocomplete="off">
+                    <input type="number" id="initial-deposit" placeholder="Initial Deposit ($)" autocomplete="off">
+                    <button id="create-btn">Create Account</button>
+                </div>
+            </div>
+
+            <div class="card hidden" id="transaction-card">
+                <div class="card-header">Transactions</div>
+                <div class="input-group">
+                    <input type="number" id="transaction-amount" placeholder="Amount ($)" autocomplete="off">
+                    <div class="button-group">
+                        <button id="deposit-btn" class="btn-success">Deposit</button>
+                        <button id="withdraw-btn" class="btn-danger">Withdraw</button>
+                    </div>
+                </div>
+                <div id="system-message" class="message-log"></div>
+            </div>
+        </section>
+
+        <section class="dashboard-panel hidden" id="dashboard-panel">
+            <div class="account-summary card">
+                <div class="card-header">Account Summary</div>
+                <div class="summary-details">
+                    <p class="label">Account Holder</p>
+                    <h2 id="display-name">---</h2>
+                    <p class="label mt-1">Available Balance</p>
+                    <h1 id="display-balance" class="balance-amount">$0.00</h1>
+                </div>
+            </div>
+
+            <div class="transaction-history card">
+                <div class="card-header">Recent Activity</div>
+                <div id="history-container" class="history-container">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
