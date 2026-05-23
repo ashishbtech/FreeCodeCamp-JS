@@ -8,5 +8,5 @@ This repository bypasses introductory syntax and isolated algorithms to focus ex
 - [x] **Markdown to HTML Converter:** (Regex & String Parsing)
 - [x] **Drum Machine:** (Audio API & Interactive Event Listeners)
 - [x] **Voting System:** (Maps, Sets & State Management)
-- [ ] **Bank Account Manager:** (Classes & Object-Oriented Logic)
-- [ ] **Weather App:** (Asynchronous JS & API Integration)
+- [x] **Bank Account Manager:** (Classes & Object-Oriented Logic)
+- [x] **Weather App:** (Asynchronous JS & API Integration)
